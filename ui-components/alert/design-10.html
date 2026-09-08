@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alert - Futuristic Hologram Indigo / Holograma Futurista Índigo</title>
+  <style>
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+    body { background-color: #090a16; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; }
+    header.demo-header { position: fixed; top: 0; left: 0; right: 0; padding: 0.75rem 1.5rem; background: rgba(0,0,0,0.4); backdrop-filter: blur(10px); display: flex; justify-content: space-between; align-items: center; z-index: 1000; color: #fff; font-size: 0.875rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .demo-container { width: 100%; max-width: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 300px; margin-top: 2rem; }
+    footer.demo-footer { position: fixed; bottom: 0; left: 0; right: 0; padding: 0.5rem; text-align: center; font-size: 0.75rem; color: rgba(255,255,255,0.6); background: rgba(0,0,0,0.3); }
+    footer.demo-footer a { color: inherit; text-decoration: underline; }
+
+        body { color: #a5b4fc; }
+        header.demo-header { background: #090a16; color: #818cf8; border-bottom: 1px solid rgba(129, 140, 248, 0.3); }
+        footer.demo-footer { background: #090a16; color: #6366f1; }
+        .component-box { background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(99, 102, 241, 0.5); border-radius: 12px; padding: 2rem; box-shadow: 0 0 20px rgba(99, 102, 241, 0.2); width: 100%; text-align: center; position: relative; overflow: hidden; }
+        .component-box::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(129, 140, 248, 0.2), transparent); animation: holoscan 4s infinite; }
+        @keyframes holoscan { 0% { left: -100%; } 100% { left: 100%; } }
+        .ui-element { background: rgba(99, 102, 241, 0.15); color: #c7d2fe; border: 1px solid #818cf8; padding: 0.75rem 1.5rem; border-radius: 6px; cursor: pointer; font-size: 1rem; transition: all 0.3s; outline: none; display: inline-block; box-shadow: inset 0 0 10px rgba(129, 140, 248, 0.3); }
+        .ui-element:hover, .ui-element:focus { background: rgba(99, 102, 241, 0.3); color: #fff; box-shadow: 0 0 15px #818cf8; }
+
+
+  </style>
+</head>
+<body>
+  <header class="demo-header">
+    <div><strong>ALERT</strong> - Design 10: Futuristic Hologram Indigo / Holograma Futurista Índigo</div>
+    <div>By Harley Vásquez</div>
+  </header>
+
+  <main class="demo-container">
+    <div class="component-box">
+
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 350px;">
+            <div id="alert-banner" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border: 1px solid currentColor; border-radius: 8px; width: 100%;">
+              <span>⚠️ System update available!</span>
+              <button id="alert-close" class="ui-element" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" aria-label="Dismiss Alert">Dismiss</button>
+            </div>
+            <div id="alert-status" style="font-size: 0.85rem; display: none;">Alert dismissed.</div>
+          </div>
+
+    </div>
+  </main>
+
+  <footer class="demo-footer">
+    Design #10 | <a href="index.html">Back to alert Gallery</a> | Designed by Harley Vásquez | <a href="https://www.linkedin.com/in/harleyvasquez/" target="_blank">LinkedIn</a>
+  </footer>
+
+  <script>
+
+          const banner = document.getElementById('alert-banner');
+          const status = document.getElementById('alert-status');
+          document.getElementById('alert-close').addEventListener('click', () => {
+            banner.style.display = 'none';
+            status.style.display = 'block';
+          });
+
+  </script>
+</body>
+</html>
