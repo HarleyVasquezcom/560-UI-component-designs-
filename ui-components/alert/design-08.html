@@ -32,15 +32,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 350px;">
-            <div id="alert-banner" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border: 1px solid currentColor; border-radius: 8px; width: 100%;">
-              <span>⚠️ System update available!</span>
-              <button id="alert-close" class="ui-element" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" aria-label="Dismiss Alert">Dismiss</button>
-            </div>
-            <div id="alert-status" style="font-size: 0.85rem; display: none;">Alert dismissed.</div>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 350px;"><div id="alert-banner" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border: 1px solid currentColor; border-radius: 8px; width: 100%;"><span>⚠️ System update available!</span><button id="alert-close" class="ui-element" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" aria-label="Dismiss Alert">Dismiss</button></div><div id="alert-status" style="font-size: 0.85rem; display: none;">Alert dismissed.</div></div>
     </div>
   </main>
 
@@ -49,14 +41,7 @@
   </footer>
 
   <script>
-
-          const banner = document.getElementById('alert-banner');
-          const status = document.getElementById('alert-status');
-          document.getElementById('alert-close').addEventListener('click', () => {
-            banner.style.display = 'none';
-            status.style.display = 'block';
-          });
-
+    const banner = document.getElementById('alert-banner'); const status = document.getElementById('alert-status'); document.getElementById('alert-close').addEventListener('click', () => { banner.style.display = 'none'; status.style.display = 'block'; });
   </script>
 </body>
 </html>

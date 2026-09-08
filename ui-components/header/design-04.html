@@ -31,15 +31,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%;">
-            <header id="sticky-header" style="width: 100%; max-width: 400px; padding: 1rem; border: 1px solid currentColor; border-radius: 8px; display: flex; justify-content: space-between; align-items: center;">
-              <strong>AppHeader</strong>
-              <button id="header-nav-btn" class="ui-element" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" aria-label="Toggle Header Navigation">Nav</button>
-            </header>
-            <div id="header-status" style="font-size: 0.85rem;">Sticky header active</div>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%;"><header id="sticky-header" style="width: 100%; max-width: 400px; padding: 1rem; border: 1px solid currentColor; border-radius: 8px; display: flex; justify-content: space-between; align-items: center;"><strong>AppHeader</strong><button id="header-nav-btn" class="ui-element" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" aria-label="Toggle Header Navigation">Nav</button></header><div id="header-status" style="font-size: 0.85rem;">Sticky header active</div></div>
     </div>
   </main>
 
@@ -48,13 +40,7 @@
   </footer>
 
   <script>
-
-          const btn = document.getElementById('header-nav-btn');
-          const status = document.getElementById('header-status');
-          btn.addEventListener('click', () => {
-            status.textContent = status.textContent === 'Sticky header active' ? 'Menu clicked!' : 'Sticky header active';
-          });
-
+    const btn = document.getElementById('header-nav-btn'); const status = document.getElementById('header-status'); btn.addEventListener('click', () => { status.textContent = status.textContent === 'Sticky header active' ? 'Menu clicked!' : 'Sticky header active'; });
   </script>
 </body>
 </html>

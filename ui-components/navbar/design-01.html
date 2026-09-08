@@ -29,14 +29,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <nav style="display: flex; gap: 1rem; align-items: center; justify-content: center; width: 100%;">
-            <a href="#home" class="nav-link ui-element active" data-target="Home">Home</a>
-            <a href="#about" class="nav-link ui-element" data-target="About">About</a>
-            <a href="#contact" class="nav-link ui-element" data-target="Contact">Contact</a>
-          </nav>
-          <div id="nav-status" style="margin-top: 1rem; font-weight: bold;">Active: Home</div>
-
+      <nav style="display: flex; gap: 1rem; align-items: center; justify-content: center; width: 100%;"><a href="#home" class="nav-link ui-element active" data-target="Home">Home</a><a href="#about" class="nav-link ui-element" data-target="About">About</a><a href="#contact" class="nav-link ui-element" data-target="Contact">Contact</a></nav><div id="nav-status" style="margin-top: 1rem; font-weight: bold;">Active: Home</div>
     </div>
   </main>
 
@@ -45,18 +38,7 @@
   </footer>
 
   <script>
-
-          const links = document.querySelectorAll('.nav-link');
-          const status = document.getElementById('nav-status');
-          links.forEach(link => {
-            link.addEventListener('click', (e) => {
-              e.preventDefault();
-              links.forEach(l => l.classList.remove('active'));
-              link.classList.add('active');
-              status.textContent = 'Active: ' + link.getAttribute('data-target');
-            });
-          });
-
+    const links = document.querySelectorAll('.nav-link'); const status = document.getElementById('nav-status'); links.forEach(link => { link.addEventListener('click', (e) => { e.preventDefault(); links.forEach(l => l.classList.remove('active')); link.classList.add('active'); status.textContent = 'Active: ' + link.getAttribute('data-target'); }); });
   </script>
 </body>
 </html>

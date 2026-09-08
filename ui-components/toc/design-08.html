@@ -32,18 +32,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 360px;">
-            <div style="text-align: left; width: 100%; padding: 0.5rem; border: 1px solid currentColor;">
-              <strong>Table of Contents</strong>
-              <ul style="list-style: none; padding-left: 0.5rem; margin-top: 0.5rem;">
-                <li><a href="#" class="toc-item" data-section="Section 1" style="color: inherit;">1. Introduction</a></li>
-                <li><a href="#" class="toc-item" data-section="Section 2" style="color: inherit;">2. Features</a></li>
-              </ul>
-            </div>
-            <div id="toc-output" style="font-weight: bold;">Viewing: Introduction</div>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 360px;"><div style="text-align: left; width: 100%; padding: 0.5rem; border: 1px solid currentColor;"><strong>Table of Contents</strong><ul style="list-style: none; padding-left: 0.5rem; margin-top: 0.5rem;"><li><a href="#" class="toc-item" data-section="Section 1" style="color: inherit;">1. Introduction</a></li><li><a href="#" class="toc-item" data-section="Section 2" style="color: inherit;">2. Features</a></li></ul></div><div id="toc-output" style="font-weight: bold;">Viewing: Introduction</div></div>
     </div>
   </main>
 
@@ -52,16 +41,7 @@
   </footer>
 
   <script>
-
-          const items = document.querySelectorAll('.toc-item');
-          const out = document.getElementById('toc-output');
-          items.forEach(item => {
-            item.addEventListener('click', (e) => {
-              e.preventDefault();
-              out.textContent = 'Viewing: ' + item.getAttribute('data-section');
-            });
-          });
-
+    const items = document.querySelectorAll('.toc-item'); const out = document.getElementById('toc-output'); items.forEach(item => { item.addEventListener('click', (e) => { e.preventDefault(); out.textContent = 'Viewing: ' + item.getAttribute('data-section'); }); });
   </script>
 </body>
 </html>

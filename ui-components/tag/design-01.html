@@ -29,15 +29,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-            <div style="display: flex; gap: 0.5rem;" id="tag-container">
-              <span class="ui-tag" style="padding: 0.4rem 0.8rem; border: 1px solid currentColor; border-radius: 16px; cursor: pointer;">Design ✕</span>
-              <span class="ui-tag" style="padding: 0.4rem 0.8rem; border: 1px solid currentColor; border-radius: 16px; cursor: pointer;">Code ✕</span>
-            </div>
-            <div id="tag-status" style="font-size: 0.85rem;">Click tag to remove</div>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;"><div style="display: flex; gap: 0.5rem;" id="tag-container"><span class="ui-tag" style="padding: 0.4rem 0.8rem; border: 1px solid currentColor; border-radius: 16px; cursor: pointer;">Design ✕</span><span class="ui-tag" style="padding: 0.4rem 0.8rem; border: 1px solid currentColor; border-radius: 16px; cursor: pointer;">Code ✕</span></div><div id="tag-status" style="font-size: 0.85rem;">Click tag to remove</div></div>
     </div>
   </main>
 
@@ -46,14 +38,7 @@
   </footer>
 
   <script>
-
-          const tags = document.querySelectorAll('.ui-tag');
-          tags.forEach(tag => {
-            tag.addEventListener('click', () => {
-              tag.style.display = 'none';
-            });
-          });
-
+    const tags = document.querySelectorAll('.ui-tag'); tags.forEach(tag => { tag.addEventListener('click', () => { tag.style.display = 'none'; }); });
   </script>
 </body>
 </html>

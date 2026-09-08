@@ -29,14 +29,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; text-align: center; max-width: 300px;">
-            <div style="font-size: 3rem;">📭</div>
-            <h4>No Messages Yet</h4>
-            <p style="font-size: 0.85rem;">Your inbox is completely empty.</p>
-            <button id="empty-cta" class="ui-element" aria-label="Refresh Inbox">Refresh Inbox</button>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; text-align: center; max-width: 300px;"><div style="font-size: 3rem;">📭</div><h4>No Messages Yet</h4><p style="font-size: 0.85rem;">Your inbox is completely empty.</p><button id="empty-cta" class="ui-element" aria-label="Refresh Inbox">Refresh Inbox</button></div>
     </div>
   </main>
 
@@ -45,13 +38,7 @@
   </footer>
 
   <script>
-
-          const cta = document.getElementById('empty-cta');
-          cta.addEventListener('click', () => {
-            cta.textContent = 'Checking...';
-            setTimeout(() => { cta.textContent = 'Refreshed!'; }, 1000);
-          });
-
+    const cta = document.getElementById('empty-cta'); cta.addEventListener('click', () => { cta.textContent = 'Checking...'; setTimeout(() => { cta.textContent = 'Refreshed!'; }, 1000); });
   </script>
 </body>
 </html>

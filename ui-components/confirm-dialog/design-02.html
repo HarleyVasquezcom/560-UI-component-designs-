@@ -31,16 +31,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 320px;">
-            <p>Are you sure you want to delete this file?</p>
-            <div style="display: flex; gap: 1rem;">
-              <button id="confirm-yes" class="ui-element" aria-label="Confirm Action">Yes</button>
-              <button id="confirm-no" class="ui-element" aria-label="Cancel Action">No</button>
-            </div>
-            <div id="confirm-result" style="font-weight: bold; min-height: 1.2rem;"></div>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 320px;"><p>Are you sure you want to delete this file?</p><div style="display: flex; gap: 1rem;"><button id="confirm-yes" class="ui-element" aria-label="Confirm Action">Yes</button><button id="confirm-no" class="ui-element" aria-label="Cancel Action">No</button></div><div id="confirm-result" style="font-weight: bold; min-height: 1.2rem;"></div></div>
     </div>
   </main>
 
@@ -49,11 +40,7 @@
   </footer>
 
   <script>
-
-          const res = document.getElementById('confirm-result');
-          document.getElementById('confirm-yes').addEventListener('click', () => { res.textContent = 'Confirmed: File Deleted'; });
-          document.getElementById('confirm-no').addEventListener('click', () => { res.textContent = 'Cancelled'; });
-
+    const res = document.getElementById('confirm-result'); document.getElementById('confirm-yes').addEventListener('click', () => { res.textContent = 'Confirmed: File Deleted'; }); document.getElementById('confirm-no').addEventListener('click', () => { res.textContent = 'Cancelled'; });
   </script>
 </body>
 </html>

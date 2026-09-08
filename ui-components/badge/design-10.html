@@ -33,15 +33,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
-            <button id="badge-btn" class="ui-element" aria-label="Notifications Button" style="position: relative;">
-              Notifications
-              <span id="badge-count" style="position: absolute; top: -8px; right: -8px; background: #ef4444; color: #fff; border-radius: 10px; padding: 2px 6px; font-size: 0.75rem; font-weight: bold;">3</span>
-            </button>
-            <button id="clear-badge" class="ui-element" aria-label="Clear Notifications" style="padding: 0.5rem 0.75rem; font-size: 0.8rem;">Clear</button>
-          </div>
-
+      <div style="display: flex; align-items: center; justify-content: center; gap: 1rem;"><button id="badge-btn" class="ui-element" aria-label="Notifications Button" style="position: relative;">Notifications<span id="badge-count" style="position: absolute; top: -8px; right: -8px; background: #ef4444; color: #fff; border-radius: 10px; padding: 2px 6px; font-size: 0.75rem; font-weight: bold;">3</span></button><button id="clear-badge" class="ui-element" aria-label="Clear Notifications" style="padding: 0.5rem 0.75rem; font-size: 0.8rem;">Clear</button></div>
     </div>
   </main>
 
@@ -50,17 +42,7 @@
   </footer>
 
   <script>
-
-          const count = document.getElementById('badge-count');
-          document.getElementById('badge-btn').addEventListener('click', () => {
-            let current = parseInt(count.textContent) || 0;
-            count.textContent = current + 1;
-            count.style.display = 'inline-block';
-          });
-          document.getElementById('clear-badge').addEventListener('click', () => {
-            count.textContent = '0';
-          });
-
+    const count = document.getElementById('badge-count'); document.getElementById('badge-btn').addEventListener('click', () => { let current = parseInt(count.textContent) || 0; count.textContent = current + 1; count.style.display = 'inline-block'; }); document.getElementById('clear-badge').addEventListener('click', () => { count.textContent = '0'; });
   </script>
 </body>
 </html>

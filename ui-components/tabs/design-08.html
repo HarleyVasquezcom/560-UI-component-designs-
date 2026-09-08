@@ -32,20 +32,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="width: 100%; max-width: 400px; margin: 0 auto;">
-            <div style="display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 1rem;">
-              <button class="tab-btn ui-element active" data-tab="1" aria-label="Tab 1">Tab 1</button>
-              <button class="tab-btn ui-element" data-tab="2" aria-label="Tab 2">Tab 2</button>
-            </div>
-            <div id="tab-panel-1" class="tab-panel" style="display: block; padding: 1rem; border: 1px solid currentColor; border-radius: 8px;">
-              Content for Panel 1
-            </div>
-            <div id="tab-panel-2" class="tab-panel" style="display: none; padding: 1rem; border: 1px solid currentColor; border-radius: 8px;">
-              Content for Panel 2
-            </div>
-          </div>
-
+      <div style="width: 100%; max-width: 400px; margin: 0 auto;"><div style="display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 1rem;"><button class="tab-btn ui-element active" data-tab="1" aria-label="Tab 1">Tab 1</button><button class="tab-btn ui-element" data-tab="2" aria-label="Tab 2">Tab 2</button></div><div id="tab-panel-1" class="tab-panel" style="display: block; padding: 1rem; border: 1px solid currentColor; border-radius: 8px;">Content for Panel 1</div><div id="tab-panel-2" class="tab-panel" style="display: none; padding: 1rem; border: 1px solid currentColor; border-radius: 8px;">Content for Panel 2</div></div>
     </div>
   </main>
 
@@ -54,18 +41,7 @@
   </footer>
 
   <script>
-
-          const btns = document.querySelectorAll('.tab-btn');
-          btns.forEach(btn => {
-            btn.addEventListener('click', () => {
-              btns.forEach(b => b.classList.remove('active'));
-              btn.classList.add('active');
-              const target = btn.getAttribute('data-tab');
-              document.querySelectorAll('.tab-panel').forEach(p => p.style.display = 'none');
-              document.getElementById('tab-panel-' + target).style.display = 'block';
-            });
-          });
-
+    const btns = document.querySelectorAll('.tab-btn'); btns.forEach(btn => { btn.addEventListener('click', () => { btns.forEach(b => b.classList.remove('active')); btn.classList.add('active'); const target = btn.getAttribute('data-tab'); document.querySelectorAll('.tab-panel').forEach(p => p.style.display = 'none'); document.getElementById('tab-panel-' + target).style.display = 'block'; }); });
   </script>
 </body>
 </html>

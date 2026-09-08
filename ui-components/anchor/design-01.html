@@ -29,15 +29,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%;">
-            <a href="#target-section" id="anchor-link" class="ui-element" aria-label="Scroll to target section">Scroll to Section</a>
-            <div style="height: 100px; overflow-y: scroll; width: 100%; max-width: 320px; border: 1px solid currentColor; padding: 0.5rem;" id="scroll-box">
-              <p style="margin-bottom: 120px;">Top of container...</p>
-              <p id="target-section" style="font-weight: bold; color: #ff0055;">Target Section Reached!</p>
-            </div>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%;"><a href="#target-section" id="anchor-link" class="ui-element" aria-label="Scroll to target section">Scroll to Section</a><div style="height: 100px; overflow-y: scroll; width: 100%; max-width: 320px; border: 1px solid currentColor; padding: 0.5rem;" id="scroll-box"><p style="margin-bottom: 120px;">Top of container...</p><p id="target-section" style="font-weight: bold; color: #ff0055;">Target Section Reached!</p></div></div>
     </div>
   </main>
 
@@ -46,16 +38,7 @@
   </footer>
 
   <script>
-
-          const link = document.getElementById('anchor-link');
-          const target = document.getElementById('target-section');
-          const box = document.getElementById('scroll-box');
-          link.addEventListener('click', (e) => {
-            e.preventDefault();
-            box.scrollTop = target.offsetTop;
-            target.style.outline = '2px solid currentColor';
-          });
-
+    const link = document.getElementById('anchor-link'); const target = document.getElementById('target-section'); const box = document.getElementById('scroll-box'); link.addEventListener('click', (e) => { e.preventDefault(); box.scrollTop = target.offsetTop; target.style.outline = '2px solid currentColor'; });
   </script>
 </body>
 </html>

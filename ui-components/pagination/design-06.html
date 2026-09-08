@@ -31,16 +31,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-            <div style="display: flex; gap: 0.5rem;">
-              <button class="pg-btn ui-element active" data-page="1" aria-label="Page 1">1</button>
-              <button class="pg-btn ui-element" data-page="2" aria-label="Page 2">2</button>
-              <button class="pg-btn ui-element" data-page="3" aria-label="Page 3">3</button>
-            </div>
-            <div id="pg-output" style="font-weight: bold;">Page 1 Loaded</div>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;"><div style="display: flex; gap: 0.5rem;"><button class="pg-btn ui-element active" data-page="1" aria-label="Page 1">1</button><button class="pg-btn ui-element" data-page="2" aria-label="Page 2">2</button><button class="pg-btn ui-element" data-page="3" aria-label="Page 3">3</button></div><div id="pg-output" style="font-weight: bold;">Page 1 Loaded</div></div>
     </div>
   </main>
 
@@ -49,17 +40,7 @@
   </footer>
 
   <script>
-
-          const btns = document.querySelectorAll('.pg-btn');
-          const out = document.getElementById('pg-output');
-          btns.forEach(btn => {
-            btn.addEventListener('click', () => {
-              btns.forEach(b => b.classList.remove('active'));
-              btn.classList.add('active');
-              out.textContent = 'Page ' + btn.getAttribute('data-page') + ' Loaded';
-            });
-          });
-
+    const btns = document.querySelectorAll('.pg-btn'); const out = document.getElementById('pg-output'); btns.forEach(btn => { btn.addEventListener('click', () => { btns.forEach(b => b.classList.remove('active')); btn.classList.add('active'); out.textContent = 'Page ' + btn.getAttribute('data-page') + ' Loaded'; }); });
   </script>
 </body>
 </html>

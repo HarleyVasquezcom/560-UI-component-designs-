@@ -32,15 +32,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 380px;">
-            <blockquote id="quote-box" style="padding: 1rem; border-left: 4px solid currentColor; font-style: italic; width: 100%;">
-              "Simplicity is the ultimate sophistication."
-              <footer style="margin-top: 0.5rem; font-style: normal; font-weight: bold;">— Leonardo da Vinci</footer>
-            </blockquote>
-            <button id="quote-copy" class="ui-element" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;" aria-label="Copy Citation">Copy Quote</button>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 380px;"><blockquote id="quote-box" style="padding: 1rem; border-left: 4px solid currentColor; font-style: italic; width: 100%;">"Simplicity is the ultimate sophistication."<footer style="margin-top: 0.5rem; font-style: normal; font-weight: bold;">— Leonardo da Vinci</footer></blockquote><button id="quote-copy" class="ui-element" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;" aria-label="Copy Citation">Copy Quote</button></div>
     </div>
   </main>
 
@@ -49,13 +41,7 @@
   </footer>
 
   <script>
-
-          const btn = document.getElementById('quote-copy');
-          btn.addEventListener('click', () => {
-            btn.textContent = 'Quote Copied!';
-            setTimeout(() => { btn.textContent = 'Copy Quote'; }, 2000);
-          });
-
+    const btn = document.getElementById('quote-copy'); btn.addEventListener('click', () => { btn.textContent = 'Quote Copied!'; setTimeout(() => { btn.textContent = 'Copy Quote'; }, 2000); });
   </script>
 </body>
 </html>

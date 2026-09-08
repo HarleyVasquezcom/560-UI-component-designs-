@@ -29,15 +29,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%; max-width: 380px;">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-family: monospace; font-size: 0.85rem;">JavaScript</span>
-              <button id="copy-btn" class="ui-element" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" aria-label="Copy Code">Copy</button>
-            </div>
-            <pre style="padding: 1rem; border: 1px solid currentColor; border-radius: 6px; text-align: left; overflow-x: auto; font-family: monospace; font-size: 0.85rem;"><code id="code-content">console.log("Hello, World!");</code></pre>
-          </div>
-
+      <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%; max-width: 380px;"><div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: monospace; font-size: 0.85rem;">JavaScript</span><button id="copy-btn" class="ui-element" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" aria-label="Copy Code">Copy</button></div><pre style="padding: 1rem; border: 1px solid currentColor; border-radius: 6px; text-align: left; overflow-x: auto; font-family: monospace; font-size: 0.85rem;"><code id="code-content">console.log("Hello, World!");</code></pre></div>
     </div>
   </main>
 
@@ -46,15 +38,7 @@
   </footer>
 
   <script>
-
-          const btn = document.getElementById('copy-btn');
-          const code = document.getElementById('code-content');
-          btn.addEventListener('click', () => {
-            navigator.clipboard ? navigator.clipboard.writeText(code.textContent) : null;
-            btn.textContent = 'Copied!';
-            setTimeout(() => { btn.textContent = 'Copy'; }, 2000);
-          });
-
+    const btn = document.getElementById('copy-btn'); const code = document.getElementById('code-content'); btn.addEventListener('click', () => { navigator.clipboard ? navigator.clipboard.writeText(code.textContent) : null; btn.textContent = 'Copied!'; setTimeout(() => { btn.textContent = 'Copy'; }, 2000); });
   </script>
 </body>
 </html>

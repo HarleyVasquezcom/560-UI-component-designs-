@@ -29,13 +29,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-            <div id="spinner-graphic" style="width: 36px; height: 36px; border: 4px solid rgba(255,255,255,0.2); border-top: 4px solid currentColor; border-radius: 50%; animation: spin 1s linear infinite;"></div>
-            <button id="spin-toggle" class="ui-element" aria-label="Toggle Loading State">Stop Loading</button>
-            <style>@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }</style>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;"><div id="spinner-graphic" style="width: 36px; height: 36px; border: 4px solid rgba(255,255,255,0.2); border-top: 4px solid currentColor; border-radius: 50%; animation: spin 1s linear infinite;"></div><button id="spin-toggle" class="ui-element" aria-label="Toggle Loading State">Stop Loading</button><style>@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }</style></div>
     </div>
   </main>
 
@@ -44,16 +38,7 @@
   </footer>
 
   <script>
-
-          const graphic = document.getElementById('spinner-graphic');
-          const btn = document.getElementById('spin-toggle');
-          let loading = true;
-          btn.addEventListener('click', () => {
-            loading = !loading;
-            graphic.style.animationPlayState = loading ? 'running' : 'paused';
-            btn.textContent = loading ? 'Stop Loading' : 'Start Loading';
-          });
-
+    const graphic = document.getElementById('spinner-graphic'); const btn = document.getElementById('spin-toggle'); let loading = true; btn.addEventListener('click', () => { loading = !loading; graphic.style.animationPlayState = loading ? 'running' : 'paused'; btn.textContent = loading ? 'Stop Loading' : 'Start Loading'; });
   </script>
 </body>
 </html>

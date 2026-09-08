@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text-area - Vibrant Cyberpunk Neon / Cyberpunk Neón Vibrante</title>
+  <style>
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+    body { background-color: #050515; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; }
+    header.demo-header { position: fixed; top: 0; left: 0; right: 0; padding: 0.75rem 1.5rem; background: rgba(0,0,0,0.4); backdrop-filter: blur(10px); display: flex; justify-content: space-between; align-items: center; z-index: 1000; color: #fff; font-size: 0.875rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .demo-container { width: 100%; max-width: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 300px; margin-top: 2rem; }
+    footer.demo-footer { position: fixed; bottom: 0; left: 0; right: 0; padding: 0.5rem; text-align: center; font-size: 0.75rem; color: rgba(255,255,255,0.6); background: rgba(0,0,0,0.3); }
+    footer.demo-footer a { color: inherit; text-decoration: underline; }
+
+        body { color: #00ffcc; font-family: 'Courier New', monospace; }
+        header.demo-header { background: #000; color: #ff0055; border-bottom: 2px solid #00ffcc; }
+        footer.demo-footer { background: #000; color: #00ffcc; }
+        .component-box { background: #0a0a23; border: 2px solid #ff0055; border-radius: 0px; padding: 2rem; box-shadow: 0 0 15px #ff0055, inset 0 0 10px #00ffcc; width: 100%; text-align: center; clip-path: polygon(0 0, 95% 0, 100% 10%, 100% 100%, 5% 100%, 0 90%); }
+        .ui-element { background: #ff0055; color: #fff; border: 2px solid #00ffcc; padding: 0.75rem 1.5rem; cursor: pointer; font-size: 1rem; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; transition: all 0.2s; outline: none; display: inline-block; box-shadow: 3px 3px 0px #00ffcc; }
+        .ui-element:hover, .ui-element:focus { background: #00ffcc; color: #000; box-shadow: 3px 3px 0px #ff0055; }
+
+
+  </style>
+</head>
+<body>
+  <header class="demo-header">
+    <div><strong>TEXT-AREA</strong> - Design 04: Vibrant Cyberpunk Neon / Cyberpunk Neón Vibrante</div>
+    <div>By Harley Vásquez</div>
+  </header>
+
+  <main class="demo-container">
+    <div class="component-box">
+      <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%; max-width: 380px; margin: 0 auto;"><label for="txt-area">Your Message:</label><textarea id="txt-area" class="ui-element" rows="4" placeholder="Write multiple lines..." aria-label="Textarea Input" style="width: 100%; resize: vertical;"></textarea><div id="area-counter" style="font-size: 0.85rem; text-align: right;">0 characters</div></div>
+    </div>
+  </main>
+
+  <footer class="demo-footer">
+    Design #04 | <a href="index.html">Back to text-area Gallery</a> | Designed by Harley Vásquez | <a href="https://www.linkedin.com/in/harleyvasquez/" target="_blank">LinkedIn</a>
+  </footer>
+
+  <script>
+    const area = document.getElementById('txt-area'); const counter = document.getElementById('area-counter'); area.addEventListener('input', () => { counter.textContent = area.value.length + ' characters'; });
+  </script>
+</body>
+</html>

@@ -33,15 +33,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 320px;">
-            <div style="display: flex; align-items: center; gap: 1rem;">
-              <button id="media-play" class="ui-element" aria-label="Play or Pause Audio">▶ Play</button>
-              <span id="media-time" style="font-family: monospace;">00:00</span>
-            </div>
-            <input type="range" id="media-seek" value="0" min="0" max="100" style="width: 100%; cursor: pointer;" aria-label="Audio Seekbar">
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 320px;"><div style="display: flex; align-items: center; gap: 1rem;"><button id="media-play" class="ui-element" aria-label="Play or Pause Audio">▶ Play</button><span id="media-time" style="font-family: monospace;">00:00</span></div><input type="range" id="media-seek" value="0" min="0" max="100" style="width: 100%; cursor: pointer;" aria-label="Audio Seekbar"></div>
     </div>
   </main>
 
@@ -50,19 +42,7 @@
   </footer>
 
   <script>
-
-          const play = document.getElementById('media-play');
-          const time = document.getElementById('media-time');
-          const seek = document.getElementById('media-seek');
-          let isPlaying = false;
-          play.addEventListener('click', () => {
-            isPlaying = !isPlaying;
-            play.textContent = isPlaying ? '⏸ Pause' : '▶ Play';
-          });
-          seek.addEventListener('input', () => {
-            time.textContent = '00:' + String(seek.value).padStart(2, '0');
-          });
-
+    const play = document.getElementById('media-play'); const time = document.getElementById('media-time'); const seek = document.getElementById('media-seek'); let isPlaying = false; play.addEventListener('click', () => { isPlaying = !isPlaying; play.textContent = isPlaying ? '⏸ Pause' : '▶ Play'; }); seek.addEventListener('input', () => { time.textContent = '00:' + String(seek.value).padStart(2, '0'); });
   </script>
 </body>
 </html>

@@ -33,15 +33,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 320px;">
-            <div style="display: flex; align-items: flex-end; justify-content: space-around; height: 120px; width: 100%; border-bottom: 2px solid currentColor;">
-              <div id="bar-1" style="width: 30px; height: 40%; background: currentColor; transition: height 0.3s;"></div>
-              <div id="bar-2" style="width: 30px; height: 75%; background: currentColor; transition: height 0.3s;"></div>
-            </div>
-            <button id="chart-update" class="ui-element" aria-label="Randomize Chart Data">Randomize Data</button>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 320px;"><div style="display: flex; align-items: flex-end; justify-content: space-around; height: 120px; width: 100%; border-bottom: 2px solid currentColor;"><div id="bar-1" style="width: 30px; height: 40%; background: currentColor; transition: height 0.3s;"></div><div id="bar-2" style="width: 30px; height: 75%; background: currentColor; transition: height 0.3s;"></div></div><button id="chart-update" class="ui-element" aria-label="Randomize Chart Data">Randomize Data</button></div>
     </div>
   </main>
 
@@ -50,14 +42,7 @@
   </footer>
 
   <script>
-
-          const b1 = document.getElementById('bar-1');
-          const b2 = document.getElementById('bar-2');
-          document.getElementById('chart-update').addEventListener('click', () => {
-            b1.style.height = Math.floor(Math.random() * 80 + 20) + '%';
-            b2.style.height = Math.floor(Math.random() * 80 + 20) + '%';
-          });
-
+    const b1 = document.getElementById('bar-1'); const b2 = document.getElementById('bar-2'); document.getElementById('chart-update').addEventListener('click', () => { b1.style.height = Math.floor(Math.random() * 80 + 20) + '%'; b2.style.height = Math.floor(Math.random() * 80 + 20) + '%'; });
   </script>
 </body>
 </html>

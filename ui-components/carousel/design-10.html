@@ -33,17 +33,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 320px;">
-            <div id="carousel-slide" style="padding: 2rem; border: 1px solid currentColor; border-radius: 8px; width: 100%; text-align: center; font-size: 1.2rem; font-weight: bold;">
-              Slide 1
-            </div>
-            <div style="display: flex; gap: 1rem;">
-              <button id="car-prev" class="ui-element" aria-label="Previous Slide">Prev</button>
-              <button id="car-next" class="ui-element" aria-label="Next Slide">Next</button>
-            </div>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 320px;"><div id="carousel-slide" style="padding: 2rem; border: 1px solid currentColor; border-radius: 8px; width: 100%; text-align: center; font-size: 1.2rem; font-weight: bold;">Slide 1</div><div style="display: flex; gap: 1rem;"><button id="car-prev" class="ui-element" aria-label="Previous Slide">Prev</button><button id="car-next" class="ui-element" aria-label="Next Slide">Next</button></div></div>
     </div>
   </main>
 
@@ -52,19 +42,7 @@
   </footer>
 
   <script>
-
-          const slides = ['Slide 1', 'Slide 2', 'Slide 3'];
-          let idx = 0;
-          const slideEl = document.getElementById('carousel-slide');
-          document.getElementById('car-prev').addEventListener('click', () => {
-            idx = (idx - 1 + slides.length) % slides.length;
-            slideEl.textContent = slides[idx];
-          });
-          document.getElementById('car-next').addEventListener('click', () => {
-            idx = (idx + 1) % slides.length;
-            slideEl.textContent = slides[idx];
-          });
-
+    const slides = ['Slide 1', 'Slide 2', 'Slide 3']; let idx = 0; const slideEl = document.getElementById('carousel-slide'); document.getElementById('car-prev').addEventListener('click', () => { idx = (idx - 1 + slides.length) % slides.length; slideEl.textContent = slides[idx]; }); document.getElementById('car-next').addEventListener('click', () => { idx = (idx + 1) % slides.length; slideEl.textContent = slides[idx]; });
   </script>
 </body>
 </html>

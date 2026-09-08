@@ -31,19 +31,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 320px;">
-            <div style="border-left: 2px solid currentColor; padding-left: 1rem; text-align: left; width: 100%;">
-              <div class="tl-event" style="cursor: pointer; margin-bottom: 1rem;">
-                <strong>2023</strong>: Project Started
-              </div>
-              <div class="tl-event" style="cursor: pointer;">
-                <strong>2024</strong>: Global Launch
-              </div>
-            </div>
-            <div id="tl-detail" style="font-weight: bold; font-size: 0.9rem;">Click an event for details</div>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 320px;"><div style="border-left: 2px solid currentColor; padding-left: 1rem; text-align: left; width: 100%;"><div class="tl-event" style="cursor: pointer; margin-bottom: 1rem;"><strong>2023</strong>: Project Started</div><div class="tl-event" style="cursor: pointer;"><strong>2024</strong>: Global Launch</div></div><div id="tl-detail" style="font-weight: bold; font-size: 0.9rem;">Click an event for details</div></div>
     </div>
   </main>
 
@@ -52,15 +40,7 @@
   </footer>
 
   <script>
-
-          const events = document.querySelectorAll('.tl-event');
-          const detail = document.getElementById('tl-detail');
-          events.forEach(ev => {
-            ev.addEventListener('click', () => {
-              detail.textContent = 'Selected: ' + ev.textContent.trim();
-            });
-          });
-
+    const events = document.querySelectorAll('.tl-event'); const detail = document.getElementById('tl-detail'); events.forEach(ev => { ev.addEventListener('click', () => { detail.textContent = 'Selected: ' + ev.textContent.trim(); }); });
   </script>
 </body>
 </html>

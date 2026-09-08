@@ -29,15 +29,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%; max-width: 320px;">
-            <ul id="interactive-list" style="list-style: none; padding: 0;">
-              <li class="list-item" style="padding: 0.75rem; border: 1px solid currentColor; margin-bottom: 0.5rem; border-radius: 6px; cursor: pointer;">Item 1 (Click to select)</li>
-              <li class="list-item" style="padding: 0.75rem; border: 1px solid currentColor; margin-bottom: 0.5rem; border-radius: 6px; cursor: pointer;">Item 2 (Click to select)</li>
-            </ul>
-            <div id="list-output" style="font-size: 0.9rem; font-weight: bold;">Selected: None</div>
-          </div>
-
+      <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%; max-width: 320px;"><ul id="interactive-list" style="list-style: none; padding: 0;"><li class="list-item" style="padding: 0.75rem; border: 1px solid currentColor; margin-bottom: 0.5rem; border-radius: 6px; cursor: pointer;">Item 1 (Click to select)</li><li class="list-item" style="padding: 0.75rem; border: 1px solid currentColor; margin-bottom: 0.5rem; border-radius: 6px; cursor: pointer;">Item 2 (Click to select)</li></ul><div id="list-output" style="font-size: 0.9rem; font-weight: bold;">Selected: None</div></div>
     </div>
   </main>
 
@@ -46,17 +38,7 @@
   </footer>
 
   <script>
-
-          const items = document.querySelectorAll('#interactive-list .list-item');
-          const out = document.getElementById('list-output');
-          items.forEach((item, idx) => {
-            item.addEventListener('click', () => {
-              items.forEach(i => i.style.opacity = '0.6');
-              item.style.opacity = '1';
-              out.textContent = 'Selected: Item ' + (idx + 1);
-            });
-          });
-
+    const items = document.querySelectorAll('#interactive-list .list-item'); const out = document.getElementById('list-output'); items.forEach((item, idx) => { item.addEventListener('click', () => { items.forEach(i => i.style.opacity = '0.6'); item.style.opacity = '1'; out.textContent = 'Selected: Item ' + (idx + 1); }); });
   </script>
 </body>
 </html>

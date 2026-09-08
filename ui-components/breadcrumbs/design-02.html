@@ -31,18 +31,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-            <nav aria-label="Breadcrumb" style="display: flex; gap: 0.5rem; align-items: center; font-size: 0.95rem;">
-              <a href="#" class="bc-item" data-name="Home" style="color: inherit;">Home</a>
-              <span>/</span>
-              <a href="#" class="bc-item" data-name="Products" style="color: inherit;">Products</a>
-              <span>/</span>
-              <span id="bc-current" style="font-weight: bold;">Laptops</span>
-            </nav>
-            <div id="bc-output" style="font-size: 0.9rem;">Current Page: Laptops</div>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;"><nav aria-label="Breadcrumb" style="display: flex; gap: 0.5rem; align-items: center; font-size: 0.95rem;"><a href="#" class="bc-item" data-name="Home" style="color: inherit;">Home</a><span>/</span><a href="#" class="bc-item" data-name="Products" style="color: inherit;">Products</a><span>/</span><span id="bc-current" style="font-weight: bold;">Laptops</span></nav><div id="bc-output" style="font-size: 0.9rem;">Current Page: Laptops</div></div>
     </div>
   </main>
 
@@ -51,16 +40,7 @@
   </footer>
 
   <script>
-
-          const items = document.querySelectorAll('.bc-item');
-          const out = document.getElementById('bc-output');
-          items.forEach(item => {
-            item.addEventListener('click', (e) => {
-              e.preventDefault();
-              out.textContent = 'Navigated to: ' + item.getAttribute('data-name');
-            });
-          });
-
+    const items = document.querySelectorAll('.bc-item'); const out = document.getElementById('bc-output'); items.forEach(item => { item.addEventListener('click', (e) => { e.preventDefault(); out.textContent = 'Navigated to: ' + item.getAttribute('data-name'); }); });
   </script>
 </body>
 </html>

@@ -29,16 +29,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-            <div style="display: flex; gap: 1.5rem; font-size: 1.8rem;">
-              <span class="icon-item" data-name="Heart" style="cursor: pointer;">❤️</span>
-              <span class="icon-item" data-name="Star" style="cursor: pointer;">⭐</span>
-              <span class="icon-item" data-name="Lightning" style="cursor: pointer;">⚡</span>
-            </div>
-            <div id="icon-name" style="font-size: 0.9rem; font-weight: bold;">Hover or click an icon</div>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;"><div style="display: flex; gap: 1.5rem; font-size: 1.8rem;"><span class="icon-item" data-name="Heart" style="cursor: pointer;">❤️</span><span class="icon-item" data-name="Star" style="cursor: pointer;">⭐</span><span class="icon-item" data-name="Lightning" style="cursor: pointer;">⚡</span></div><div id="icon-name" style="font-size: 0.9rem; font-weight: bold;">Hover or click an icon</div></div>
     </div>
   </main>
 
@@ -47,15 +38,7 @@
   </footer>
 
   <script>
-
-          const icons = document.querySelectorAll('.icon-item');
-          const name = document.getElementById('icon-name');
-          icons.forEach(ic => {
-            ic.addEventListener('click', () => {
-              name.textContent = 'Selected Icon: ' + ic.getAttribute('data-name');
-            });
-          });
-
+    const icons = document.querySelectorAll('.icon-item'); const name = document.getElementById('icon-name'); icons.forEach(ic => { ic.addEventListener('click', () => { name.textContent = 'Selected Icon: ' + ic.getAttribute('data-name'); }); });
   </script>
 </body>
 </html>

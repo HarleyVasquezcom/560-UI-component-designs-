@@ -33,17 +33,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 320px;">
-            <div style="width: 100%; height: 16px; border: 1px solid currentColor; border-radius: 8px; overflow: hidden;">
-              <div id="prog-fill" style="width: 25%; height: 100%; background: currentColor; transition: width 0.3s;"></div>
-            </div>
-            <div style="display: flex; gap: 1rem; align-items: center;">
-              <span id="prog-val" style="font-weight: bold;">25%</span>
-              <button id="prog-inc" class="ui-element" aria-label="Increase Progress">+25%</button>
-            </div>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 320px;"><div style="width: 100%; height: 16px; border: 1px solid currentColor; border-radius: 8px; overflow: hidden;"><div id="prog-fill" style="width: 25%; height: 100%; background: currentColor; transition: width 0.3s;"></div></div><div style="display: flex; gap: 1rem; align-items: center;"><span id="prog-val" style="font-weight: bold;">25%</span><button id="prog-inc" class="ui-element" aria-label="Increase Progress">+25%</button></div></div>
     </div>
   </main>
 
@@ -52,16 +42,7 @@
   </footer>
 
   <script>
-
-          let pct = 25;
-          const fill = document.getElementById('prog-fill');
-          const val = document.getElementById('prog-val');
-          document.getElementById('prog-inc').addEventListener('click', () => {
-            pct = pct >= 100 ? 0 : pct + 25;
-            fill.style.width = pct + '%';
-            val.textContent = pct + '%';
-          });
-
+    let pct = 25; const fill = document.getElementById('prog-fill'); const val = document.getElementById('prog-val'); document.getElementById('prog-inc').addEventListener('click', () => { pct = pct >= 100 ? 0 : pct + 25; fill.style.width = pct + '%'; val.textContent = pct + '%'; });
   </script>
 </body>
 </html>

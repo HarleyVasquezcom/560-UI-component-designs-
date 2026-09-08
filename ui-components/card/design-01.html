@@ -29,17 +29,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 320px;">
-            <div id="demo-card" style="padding: 1.5rem; border: 1px solid currentColor; border-radius: 12px; cursor: pointer; transition: transform 0.2s;" aria-label="Interactive Card">
-              <h3>Card Title</h3>
-              <p style="font-size: 0.9rem; margin-top: 0.5rem;">Click to toggle details.</p>
-              <div id="card-detail" style="display: none; margin-top: 0.75rem; font-size: 0.85rem; padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.2);">
-                Extra information unlocked!
-              </div>
-            </div>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 320px;"><div id="demo-card" style="padding: 1.5rem; border: 1px solid currentColor; border-radius: 12px; cursor: pointer; transition: transform 0.2s;" aria-label="Interactive Card"><h3>Card Title</h3><p style="font-size: 0.9rem; margin-top: 0.5rem;">Click to toggle details.</p><div id="card-detail" style="display: none; margin-top: 0.75rem; font-size: 0.85rem; padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.2);">Extra information unlocked!</div></div></div>
     </div>
   </main>
 
@@ -48,13 +38,7 @@
   </footer>
 
   <script>
-
-          const card = document.getElementById('demo-card');
-          const detail = document.getElementById('card-detail');
-          card.addEventListener('click', () => {
-            detail.style.display = detail.style.display === 'none' ? 'block' : 'none';
-          });
-
+    const card = document.getElementById('demo-card'); const detail = document.getElementById('card-detail'); card.addEventListener('click', () => { detail.style.display = detail.style.display === 'none' ? 'block' : 'none'; });
   </script>
 </body>
 </html>

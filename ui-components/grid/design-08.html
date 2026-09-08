@@ -32,15 +32,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; gap: 1rem; width: 100%;">
-            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; width: 100%; max-width: 340px; margin: 0 auto;">
-              <div class="grid-cell" style="padding: 1rem; border: 1px solid currentColor; cursor: pointer; text-align: center;">Cell A</div>
-              <div class="grid-cell" style="padding: 1rem; border: 1px solid currentColor; cursor: pointer; text-align: center;">Cell B</div>
-            </div>
-            <div id="grid-output" style="font-weight: bold;">Clicked Cell: None</div>
-          </div>
-
+      <div style="display: flex; flex-direction: column; gap: 1rem; width: 100%;"><div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; width: 100%; max-width: 340px; margin: 0 auto;"><div class="grid-cell" style="padding: 1rem; border: 1px solid currentColor; cursor: pointer; text-align: center;">Cell A</div><div class="grid-cell" style="padding: 1rem; border: 1px solid currentColor; cursor: pointer; text-align: center;">Cell B</div></div><div id="grid-output" style="font-weight: bold;">Clicked Cell: None</div></div>
     </div>
   </main>
 
@@ -49,15 +41,7 @@
   </footer>
 
   <script>
-
-          const cells = document.querySelectorAll('.grid-cell');
-          const out = document.getElementById('grid-output');
-          cells.forEach(cell => {
-            cell.addEventListener('click', () => {
-              out.textContent = 'Clicked Cell: ' + cell.textContent;
-            });
-          });
-
+    const cells = document.querySelectorAll('.grid-cell'); const out = document.getElementById('grid-output'); cells.forEach(cell => { cell.addEventListener('click', () => { out.textContent = 'Clicked Cell: ' + cell.textContent; }); });
   </script>
 </body>
 </html>

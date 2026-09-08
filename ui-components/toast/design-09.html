@@ -31,14 +31,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-            <button id="toast-trigger" class="ui-element" aria-label="Trigger Toast Notification">Show Toast</button>
-            <div id="toast-msg" style="display: none; padding: 0.75rem 1.25rem; border: 1px solid currentColor; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-              Action completed successfully!
-            </div>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;"><button id="toast-trigger" class="ui-element" aria-label="Trigger Toast Notification">Show Toast</button><div id="toast-msg" style="display: none; padding: 0.75rem 1.25rem; border: 1px solid currentColor; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">Action completed successfully!</div></div>
     </div>
   </main>
 
@@ -47,14 +40,7 @@
   </footer>
 
   <script>
-
-          const btn = document.getElementById('toast-trigger');
-          const toast = document.getElementById('toast-msg');
-          btn.addEventListener('click', () => {
-            toast.style.display = 'block';
-            setTimeout(() => { toast.style.display = 'none'; }, 2500);
-          });
-
+    const btn = document.getElementById('toast-trigger'); const toast = document.getElementById('toast-msg'); btn.addEventListener('click', () => { toast.style.display = 'block'; setTimeout(() => { toast.style.display = 'none'; }, 2500); });
   </script>
 </body>
 </html>

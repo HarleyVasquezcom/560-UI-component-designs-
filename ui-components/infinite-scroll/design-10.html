@@ -33,16 +33,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 320px;">
-            <div id="scroll-list" style="height: 150px; overflow-y: auto; border: 1px solid currentColor; width: 100%; padding: 0.5rem;">
-              <div class="scroll-item" style="padding: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1);">Item 1</div>
-              <div class="scroll-item" style="padding: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1);">Item 2</div>
-              <div class="scroll-item" style="padding: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1);">Item 3</div>
-            </div>
-            <button id="load-more-btn" class="ui-element" aria-label="Load More Items">Load More</button>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 320px;"><div id="scroll-list" style="height: 150px; overflow-y: auto; border: 1px solid currentColor; width: 100%; padding: 0.5rem;"><div class="scroll-item" style="padding: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1);">Item 1</div><div class="scroll-item" style="padding: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1);">Item 2</div><div class="scroll-item" style="padding: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1);">Item 3</div></div><button id="load-more-btn" class="ui-element" aria-label="Load More Items">Load More</button></div>
     </div>
   </main>
 
@@ -51,21 +42,7 @@
   </footer>
 
   <script>
-
-          const list = document.getElementById('scroll-list');
-          const btn = document.getElementById('load-more-btn');
-          let count = 3;
-          btn.addEventListener('click', () => {
-            for (let i = 0; i < 2; i++) {
-              count++;
-              const div = document.createElement('div');
-              div.className = 'scroll-item';
-              div.style.cssText = 'padding: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1);';
-              div.textContent = 'Item ' + count;
-              list.appendChild(div);
-            }
-          });
-
+    const list = document.getElementById('scroll-list'); const btn = document.getElementById('load-more-btn'); let count = 3; btn.addEventListener('click', () => { for (let i = 0; i < 2; i++) { count++; const div = document.createElement('div'); div.className = 'scroll-item'; div.style.cssText = 'padding: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1);'; div.textContent = 'Item ' + count; list.appendChild(div); } });
   </script>
 </body>
 </html>

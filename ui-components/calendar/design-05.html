@@ -31,17 +31,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 300px;">
-            <div style="font-weight: bold;">October 2024</div>
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; width: 100%;">
-              <button class="cal-day ui-element" aria-label="October 14">14</button>
-              <button class="cal-day ui-element" aria-label="October 15">15</button>
-              <button class="cal-day ui-element" aria-label="October 16">16</button>
-            </div>
-            <div id="cal-output" style="font-size: 0.9rem;">Selected Day: None</div>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 300px;"><div style="font-weight: bold;">October 2024</div><div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; width: 100%;"><button class="cal-day ui-element" aria-label="October 14">14</button><button class="cal-day ui-element" aria-label="October 15">15</button><button class="cal-day ui-element" aria-label="October 16">16</button></div><div id="cal-output" style="font-size: 0.9rem;">Selected Day: None</div></div>
     </div>
   </main>
 
@@ -50,15 +40,7 @@
   </footer>
 
   <script>
-
-          const days = document.querySelectorAll('.cal-day');
-          const out = document.getElementById('cal-output');
-          days.forEach(day => {
-            day.addEventListener('click', () => {
-              out.textContent = 'Selected Day: Oct ' + day.textContent;
-            });
-          });
-
+    const days = document.querySelectorAll('.cal-day'); const out = document.getElementById('cal-output'); days.forEach(day => { day.addEventListener('click', () => { out.textContent = 'Selected Day: Oct ' + day.textContent; }); });
   </script>
 </body>
 </html>

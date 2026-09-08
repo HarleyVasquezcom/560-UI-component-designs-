@@ -31,16 +31,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%; max-width: 350px;">
-            <button id="acc-header" class="ui-element" style="width: 100%; text-align: left;" aria-expanded="false" aria-label="Toggle Accordion">
-              Accordion Section 1 ▼
-            </button>
-            <div id="acc-panel" style="display: none; padding: 1rem; border: 1px solid currentColor; border-radius: 6px;">
-              Accordion inner details and text content.
-            </div>
-          </div>
-
+      <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%; max-width: 350px;"><button id="acc-header" class="ui-element" style="width: 100%; text-align: left;" aria-expanded="false" aria-label="Toggle Accordion">Accordion Section 1 ▼</button><div id="acc-panel" style="display: none; padding: 1rem; border: 1px solid currentColor; border-radius: 6px;">Accordion inner details and text content.</div></div>
     </div>
   </main>
 
@@ -49,16 +40,7 @@
   </footer>
 
   <script>
-
-          const header = document.getElementById('acc-header');
-          const panel = document.getElementById('acc-panel');
-          header.addEventListener('click', () => {
-            const isExpanded = header.getAttribute('aria-expanded') === 'true';
-            header.setAttribute('aria-expanded', !isExpanded);
-            panel.style.display = !isExpanded ? 'block' : 'none';
-            header.textContent = 'Accordion Section 1 ' + (!isExpanded ? '▲' : '▼');
-          });
-
+    const header = document.getElementById('acc-header'); const panel = document.getElementById('acc-panel'); header.addEventListener('click', () => { const isExpanded = header.getAttribute('aria-expanded') === 'true'; header.setAttribute('aria-expanded', !isExpanded); panel.style.display = !isExpanded ? 'block' : 'none'; header.textContent = 'Accordion Section 1 ' + (!isExpanded ? '▲' : '▼'); });
   </script>
 </body>
 </html>

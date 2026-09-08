@@ -1,6 +1,6 @@
 import { STYLES } from './definitions.mjs';
 
-function getCssForStyle(style, slug) {
+export function getCssForStyle(style, slug) {
   const common = `
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
     body { background-color: ${style.bg}; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; }

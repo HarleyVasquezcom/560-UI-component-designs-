@@ -33,14 +33,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; position: relative;">
-            <button id="pop-btn" class="ui-element" aria-label="Toggle Popover">Toggle Popover</button>
-            <div id="pop-content" style="display: none; position: absolute; top: 110%; padding: 1rem; border: 1px solid currentColor; border-radius: 8px; width: 220px; z-index: 10;">
-              <p style="font-size: 0.85rem;">Popover content details displayed here.</p>
-            </div>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; position: relative;"><button id="pop-btn" class="ui-element" aria-label="Toggle Popover">Toggle Popover</button><div id="pop-content" style="display: none; position: absolute; top: 110%; padding: 1rem; border: 1px solid currentColor; border-radius: 8px; width: 220px; z-index: 10;"><p style="font-size: 0.85rem;">Popover content details displayed here.</p></div></div>
     </div>
   </main>
 
@@ -49,15 +42,7 @@
   </footer>
 
   <script>
-
-          const btn = document.getElementById('pop-btn');
-          const pop = document.getElementById('pop-content');
-          btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            pop.style.display = pop.style.display === 'none' ? 'block' : 'none';
-          });
-          document.addEventListener('click', () => { pop.style.display = 'none'; });
-
+    const btn = document.getElementById('pop-btn'); const pop = document.getElementById('pop-content'); btn.addEventListener('click', (e) => { e.stopPropagation(); pop.style.display = pop.style.display === 'none' ? 'block' : 'none'; }); document.addEventListener('click', () => { pop.style.display = 'none'; });
   </script>
 </body>
 </html>

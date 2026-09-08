@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>checkbox - Clean Light Minimalist / Limpio Minimalista Claro</title>
+  <style>
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+    body { background-color: #f8fafc; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; }
+    header.demo-header { position: fixed; top: 0; left: 0; right: 0; padding: 0.75rem 1.5rem; background: rgba(0,0,0,0.4); backdrop-filter: blur(10px); display: flex; justify-content: space-between; align-items: center; z-index: 1000; color: #fff; font-size: 0.875rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .demo-container { width: 100%; max-width: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 300px; margin-top: 2rem; }
+    footer.demo-footer { position: fixed; bottom: 0; left: 0; right: 0; padding: 0.5rem; text-align: center; font-size: 0.75rem; color: rgba(255,255,255,0.6); background: rgba(0,0,0,0.3); }
+    footer.demo-footer a { color: inherit; text-decoration: underline; }
+
+        body { color: #0f172a; }
+        header.demo-header { background: rgba(255,255,255,0.8); color: #0f172a; border-bottom: 1px solid #e2e8f0; }
+        footer.demo-footer { background: rgba(255,255,255,0.8); color: #64748b; }
+        .component-box { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); width: 100%; text-align: center; }
+        .ui-element { background: #0f172a; color: #ffffff; border: none; padding: 0.75rem 1.5rem; border-radius: 6px; cursor: pointer; font-size: 1rem; font-weight: 500; transition: all 0.2s ease; outline: none; display: inline-block; }
+        .ui-element:hover, .ui-element:focus { background: #334155; }
+
+
+  </style>
+</head>
+<body>
+  <header class="demo-header">
+    <div><strong>CHECKBOX</strong> - Design 02: Clean Light Minimalist / Limpio Minimalista Claro</div>
+    <div>By Harley Vásquez</div>
+  </header>
+
+  <main class="demo-container">
+    <div class="component-box">
+      <label style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; cursor: pointer; font-size: 1.1rem;"><input type="checkbox" id="chk-interactive" class="ui-checkbox" style="width: 22px; height: 22px; cursor: pointer;" aria-label="Toggle Checkbox"><span id="chk-label" style="user-select: none;">Option is Unchecked</span></label>
+    </div>
+  </main>
+
+  <footer class="demo-footer">
+    Design #02 | <a href="index.html">Back to checkbox Gallery</a> | Designed by Harley Vásquez | <a href="https://www.linkedin.com/in/harleyvasquez/" target="_blank">LinkedIn</a>
+  </footer>
+
+  <script>
+    const chk = document.getElementById('chk-interactive'); const label = document.getElementById('chk-label'); chk.addEventListener('change', () => { label.textContent = chk.checked ? 'Option is Checked!' : 'Option is Unchecked'; label.style.fontWeight = chk.checked ? 'bold' : 'normal'; });
+  </script>
+</body>
+</html>

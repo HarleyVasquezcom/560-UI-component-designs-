@@ -29,17 +29,7 @@
 
   <main class="demo-container">
     <div class="component-box">
-
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 360px;">
-            <p style="font-size: 0.85rem;">Section Top</p>
-            <div style="display: flex; align-items: center; width: 100%; gap: 1rem;">
-              <div style="flex: 1; height: 1px; background: currentColor;"></div>
-              <button id="divider-label" class="ui-element" style="padding: 0.2rem 0.5rem; font-size: 0.75rem;" aria-label="Toggle Divider Label">OR</button>
-              <div style="flex: 1; height: 1px; background: currentColor;"></div>
-            </div>
-            <p style="font-size: 0.85rem;">Section Bottom</p>
-          </div>
-
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 360px;"><p style="font-size: 0.85rem;">Section Top</p><div style="display: flex; align-items: center; width: 100%; gap: 1rem;"><div style="flex: 1; height: 1px; background: currentColor;"></div><button id="divider-label" class="ui-element" style="padding: 0.2rem 0.5rem; font-size: 0.75rem;" aria-label="Toggle Divider Label">OR</button><div style="flex: 1; height: 1px; background: currentColor;"></div></div><p style="font-size: 0.85rem;">Section Bottom</p></div>
     </div>
   </main>
 
@@ -48,12 +38,7 @@
   </footer>
 
   <script>
-
-          const lbl = document.getElementById('divider-label');
-          lbl.addEventListener('click', () => {
-            lbl.textContent = lbl.textContent === 'OR' ? 'AND' : 'OR';
-          });
-
+    const lbl = document.getElementById('divider-label'); lbl.addEventListener('click', () => { lbl.textContent = lbl.textContent === 'OR' ? 'AND' : 'OR'; });
   </script>
 </body>
 </html>
